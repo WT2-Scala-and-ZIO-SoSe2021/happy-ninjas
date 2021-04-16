@@ -17,13 +17,13 @@ object VingtEtUn {
     case _ => throw new IllegalArgumentException(s"Invalid value $card")
   }
 
-  def determineHandValue(strategy: Array[Int] => Int, hand: Array[Int]): Int = IntHelper.sum(hand.map(values).map(strategy))
+  def determineHandValue(strategy: Array[Int] => Int)(hand: Array[Int]): Int = IntHelper.sum(hand.map(values).map(strategy))
 
   def isBust(hand: Int): Boolean = hand > 21
 
-  def optimisticF(hand: Array[Int]): Int = determineHandValue(IntHelper.max, hand)
+  def optimisticF(hand: Array[Int]): Int = determineHandValue(IntHelper.max)(hand)
 
-  def pessimisticF(hand: Array[Int]): Int = determineHandValue(IntHelper.min, hand)
+  def pessimisticF(hand: Array[Int]): Int = determineHandValue(IntHelper.min)(hand)
 
   def determineBestHandValue(hand: Array[Int]): Int = {
     val optimisticResult = optimisticF(hand)
