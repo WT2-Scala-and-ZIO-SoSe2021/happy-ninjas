@@ -1,3 +1,5 @@
+package exercise1
+
 /**
  * Twenty-One, the aim is to come as close to 21 as possible.
  */
@@ -29,6 +31,7 @@ object TwentyOne {
 
   /**
    * Takes multiple cards and returns their associated integers.
+   *
    * @param cards cards
    * @return associated integers
    */
@@ -39,6 +42,7 @@ object TwentyOne {
   /**
    * Takes a card and returns its possible values.
    * Ace returns 2 values.
+   *
    * @param card card
    * @return values
    */
@@ -52,8 +56,9 @@ object TwentyOne {
 
   /**
    * Determines the hand value by given strategy function and hand.
+   *
    * @param strategy strategy
-   * @param hand hand
+   * @param hand     hand
    * @return hand value
    */
   def determineHandValue(strategy: Array[Int] => Int)(hand: Array[Int]): Int = ArrayUtils.sum(hand.map(values).map(strategy))

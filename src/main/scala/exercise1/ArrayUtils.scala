@@ -1,9 +1,12 @@
+package exercise1
+
 /**
  * ArrayUtils contains array utils
  */
 object ArrayUtils {
   /**
    * Highest value of integers
+   *
    * @param arr array of integers
    * @return Highest value of integers
    */
@@ -11,6 +14,7 @@ object ArrayUtils {
 
   /**
    * Lowest value of integers
+   *
    * @param arr array of integers
    * @return Lowest value of integers
    */
@@ -18,6 +22,7 @@ object ArrayUtils {
 
   /**
    * Sum of integers
+   *
    * @param arr array of integers
    * @return sum of integers, 0 if no integer is given
    */
