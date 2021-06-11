@@ -22,7 +22,7 @@ object KarpusStrong {
     frequencies.map(_ => random.between(-.5, .5) * volume).to(Queue)
   }
 
-  private def validateValues(frequency: Int = 440, volume: Double = 1.0) {
+  def validateValues(frequency: Int = 440, volume: Double = 1.0) {
     if(frequency <= 0) {
       throw new Exception("Frequency must be greater then zero")
     } else if (volume < 0 || volume > 1) {

@@ -8,6 +8,8 @@ class StackLikeSpec extends AnyFlatSpec {
 
   val exception = new RuntimeException("message")
 
+  /*
+
   "push" should "push elements" in {
     assert(StackEmpty().push(1) == StackCons(1, StackEmpty()))
     assert(StackCons(1, StackEmpty()).push(2) == StackCons(2, StackCons(1, StackEmpty())))
@@ -36,4 +38,6 @@ class StackLikeSpec extends AnyFlatSpec {
     val stack = StackCons(1, StackCons(2, StackCons(3, StackEmpty())))
     assert(stack.reverse() == StackCons(3, StackCons(2, StackCons(1, StackEmpty()))))
   }
+
+  */
 }
