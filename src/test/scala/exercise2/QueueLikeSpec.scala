@@ -7,9 +7,11 @@ class QueueLikeSpec extends AnyFlatSpec {
 
   val exception = new RuntimeException("message")
 
+  /*
+
   "enqueue" should "enqueue elements" in {
     // Arrange
-    val queue = StackedQueue(StackEmpty[Int](), StackEmpty[Int]())
+    val queue = Queue(StackEmpty[Int](), StackEmpty[Int]())
     // Act && Assert
     assert(queue.enqueue(1) == StackedQueue(StackCons(1, StackEmpty()), StackEmpty()))
   }
@@ -30,4 +32,7 @@ class QueueLikeSpec extends AnyFlatSpec {
     assert(StackedQueue(StackEmpty(), StackEmpty()).isEmpty)
     assert(!StackedQueue(StackCons(1, StackCons(2, StackEmpty())), StackEmpty()).isEmpty)
   }
+
+  */
+
 }

@@ -8,5 +8,7 @@ val scalacticVersion = "3.2.5"
 
 libraryDependencies ++= Seq(
   "org.scalactic" %% "scalactic" % scalacticVersion,
-  "org.scalatest" %% "scalatest" % scalacticVersion % "test"
+  "org.scalatest" %% "scalatest" % scalacticVersion % "test",
+  "dev.zio" %% "zio" % "1.0.9",
+  "dev.zio" %% "zio-streams" % "1.0.9",
 )
